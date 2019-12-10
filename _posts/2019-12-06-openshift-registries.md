@@ -62,7 +62,7 @@ Many organizations will want to tag their images with something like [Semantic V
 oc tag myimagestream:latest myimagestream:v1.0.0
 ```
 
-The challenge comes when the registry starts filling up with numerous images. Openshift has mechanisms to clean up older versions of tags, but it won't clean up 
+The challenge comes when the registry starts filling up with numerous images. Openshift has mechanisms to clean up older versions of tags, but it won't clean up tags themselves.
 
 By describing an `ImageStream` resource, we can see details about all the tags (`is` is short for `imagestream`):
 
